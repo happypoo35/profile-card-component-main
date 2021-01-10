@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+main, .bg-img, .card-container, .footer-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #2d3248;
+  background: #19a2ae;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-img .top {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.bg-img .bottom {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.card-container {
+  width: 90%;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  min-height: 24rem;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 3rem 4rem rgba(45, 50, 72, 0.3);
+          box-shadow: 0 3rem 4rem rgba(45, 50, 72, 0.3);
+}
+
+.card-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 5.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.3rem solid white;
+}
+
+.card-title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.card-title h3 > span {
+  margin-left: 0.2rem;
+}
+
+.card-title h4,
+.card-title span {
+  font-weight: 400;
+  padding: 0.8rem 0;
+  color: #6a6f81;
+}
+
+.card-title h4 {
+  font-size: 0.9rem;
+}
+
+.card-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1.5rem 0;
+}
+
+.footer-col p {
+  color: #6a6f81;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+}
+/*# sourceMappingURL=main.css.map */
