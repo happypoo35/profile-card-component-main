@@ -25,22 +25,29 @@ body {
 
 main {
   position: relative;
-  overflow: hidden;
   height: 100vh;
   @extend %flex-column;
   justify-content: center;
-}
 
-.bg-img {
-  @extend %flex-column;
-  position: absolute;
-  z-index: -1;
-
-  .top {
-    transform: translateX(-50%);
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
   }
-  .bottom {
-    transform: translateX(50%);
+
+  &:before {
+    top: 0;
+    left: 0;
+    background: no-repeat bottom right url('../images/bg-pattern-top.svg');
+  }
+
+  &:after {
+    bottom: 0;
+    right: 0;
+    background: no-repeat top left url('../images/bg-pattern-bottom.svg');
   }
 }
 
