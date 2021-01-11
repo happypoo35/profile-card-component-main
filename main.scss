@@ -55,6 +55,7 @@ main {
   @extend %flex-column;
   width: 90%;
   max-width: fit-content;
+  min-height: 23rem;
   position: relative;
   overflow: hidden;
   background: white;

@@ -58,6 +58,7 @@ main:after {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  min-height: 23rem;
   position: relative;
   overflow: hidden;
   background: white;
